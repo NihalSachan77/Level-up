@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-<title>DARSHIL LV UP - Dashboard</title>
+<title>NIHAL LV UP - Dashboard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -309,7 +309,7 @@ body{background:radial-gradient(ellipse at top,#0a1020 0%,#000 55%);padding-bott
 <div class="top-in">
 <div class="logo">
 <img src="https://files.catbox.moe/1o431f.jpg" alt="Logo">
-<span>DARSHIL LV UP</span>
+<span>NIHAL LV UP</span>
 </div>
 <div class="act">
 <button class="bs bgold" onclick="openAutoSettings()">⚙ AUTO</button>
@@ -1044,7 +1044,7 @@ async function downloadAccountsJSON(){
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'DARSHIL_accounts_' + Date.now() + '.json';
+        a.download = 'NIHAL_accounts_' + Date.now() + '.json';
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
@@ -1055,7 +1055,7 @@ async function downloadAccountsJSON(){
 /* ==================== BOOT ==================== */
 (async function boot(){
     const path = window.location.pathname;
-    IS_LOCK_PAGE = (path === '/DARSHIL_004x-lock');
+    IS_LOCK_PAGE = (path === '/NIHAL_004x-lock');
 
     if(IS_LOCK_PAGE){
         showLockAdmin();
